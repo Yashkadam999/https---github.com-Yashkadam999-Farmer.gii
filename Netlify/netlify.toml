@@ -1,0 +1,10 @@
+[build]
+  base    = "frontend-app"
+  command = "npm run build"
+  publish = "frontend-app/dist"
+
+# Handle React Router (avoid 404s on refresh)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
