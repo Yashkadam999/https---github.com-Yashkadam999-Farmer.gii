@@ -1,0 +1,33 @@
+.pest-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-box {
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px dashed #4caf50;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.preview-image {
+  width: 200px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+}
+
+.result-box.healthy {
+  background: #4caf50; /* green */
+}
+
+.result-box.diseased {
+  background: #f44336; /* red */
+}

@@ -1,0 +1,101 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.settings-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url('https://images.pexels.com/photos/1276235/pexels-photo-1276235.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.settings-container h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 6px #000;
+}
+
+/* Centered settings form */
+.settings-form {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(12, 0, 0, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* Form items */
+.setting-item {
+  margin-bottom: 1.5rem;
+}
+
+.setting-item label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.setting-item input,
+.setting-item select {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Toggle layout */
+.setting-item.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Button styling */
+.setting-actions {
+  text-align: center;
+}
+
+.setting-actions button {
+  padding: 0.8rem 1.5rem;
+  background-color: #34a853;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Summary box */
+.settings-summary {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  background: rgba(17, 1, 1, 0.85);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  text-align: left;
+}

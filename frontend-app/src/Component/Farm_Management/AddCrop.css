@@ -1,0 +1,75 @@
+.page-background {
+  background-image: url('https://images.unsplash.com/photo-1620901433789-1d2f85a93653?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aW5kaWFuJTIwZmFybWVyfGVufDB8fDB8fHww');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+.page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.add-crop-container {
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(15, 23, 42, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-crop-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #90ee90;
+}
+
+.add-crop-form input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #28a745;
+  outline: none;
+  background-color: #0f172a;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.add-crop-form input:focus {
+  border-color: #66ff66;
+  box-shadow: 0 0 5px #66ff66;
+}
+
+.add-crop-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-crop-form button:hover {
+  background-color: #218838;
+}

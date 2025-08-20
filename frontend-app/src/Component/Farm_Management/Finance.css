@@ -1,0 +1,91 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+
+.finance-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230810/pngtree-field-of-green-wheat-crop-of-wheat-brown-grain-crop-with-image_13016102.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow-y: auto; /* Allow scroll if content overflows */
+}
+
+/* Main wrapper for content */
+.finance-content {
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 12px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Summary card section */
+.finance-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Card style */
+.card {
+  flex: 1 1 250px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Input fields */
+input[type="number"] {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Finance table */
+.finance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table headers & cells */
+.finance-table th,
+.finance-table td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  color: #fff;
+}
+
+.finance-table th {
+  background-color: #222;
+  font-weight: bold;
+}

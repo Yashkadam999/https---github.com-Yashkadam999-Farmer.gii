@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.dark {
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+.theme-button {
+  padding: 10px 20px;
+  margin-bottom: 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-button:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  text-align: center;
+}

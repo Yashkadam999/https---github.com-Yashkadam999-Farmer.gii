@@ -1,0 +1,135 @@
+/* Container */
+.schemes-container {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+  color: #000;
+}
+
+/* Title */
+.schemes-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+}
+
+/* Filter Section */
+.filter-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter-label {
+  font-weight: 600;
+  margin-right: 10px;
+  color: #000;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+}
+
+/* Grid for Schemes */
+.schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Scheme Card Box */
+.scheme-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.scheme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Scheme Title */
+.scheme-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+/* Scheme Description */
+.scheme-description {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* Scheme Crops */
+.scheme-crops {
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+/* Scheme Date */
+.scheme-date {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Scheme Link Button */
+.scheme-link {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #ddd;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.scheme-link:hover {
+  background: #bbb;
+}
+
+/* New Scheme Alert */
+.new-scheme-alert {
+  background: #fff7cc;
+  border: 1px solid #ffeb99;
+  color: #000;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  animation: fadeIn 0.8s ease-in-out;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

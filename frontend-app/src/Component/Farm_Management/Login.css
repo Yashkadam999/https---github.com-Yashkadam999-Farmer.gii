@@ -1,0 +1,185 @@
+/* Full-page background */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.login-wrapper {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  background-image: url('https://wallpaperbat.com/img/331765-farmer-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Login Card */
+.login-container {
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+  color: #000; /* Default text color inside */
+}
+
+/* Title */
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Labels & Inputs */
+.login-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: white;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(22, 21, 21, 0.8);
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  color: white;
+}
+
+/* Hover effect */
+.login-form button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Disabled buttons */
+.login-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Specific Button Colors matching your JSX */
+.btn-primary {
+  background: #28a745; /* Green */
+}
+
+.btn-google {
+  background: #db4437; /* Google Red */
+}
+
+.btn-secondary {
+  background: #007bff; /* Blue */
+}
+
+.btn-success {
+  background: #17a2b8; /* Teal */
+}
+
+/* Register link */
+.login-container p.register-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.login-container p.register-link a {
+  color: #ffc107; /* Amber */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-container p.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* OTP Section spacing */
+.otp-section {
+  margin-top: 15px;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: white;
+  opacity: 0.5;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
